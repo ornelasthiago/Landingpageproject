@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/27a71ced29.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Contato</title>
+  </head>
+  <body>
+    <!-- início do Header -->
+
+    <header>
+      <section>
+        <img src="/Imagens/logo.jpg" alt="Logo da Empresa XYZ" width="200px" />
+      </section>
+
+      <!-- Início do Menu do Site-->
+      <nav>
+        <ul>
+          <li>
+            <a href="/Início/inicio.html"> Início</a>
+          </li>
+          <li>
+            <a href="/Contato/contato.html"> Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Fim do Header-->
+
+    <!--Início do main content - Formulário -->
+
+    <main>
+      <!-- Início da Section de conteúdo do site-->
+      <section>
+        <!--início do conteúdo do site-->
+
+        <article>
+          <h1>Formulário de Contato</h1>
+          <p>Preencha os dados abaixo e envie sua mensagem de contato.</p>
+        
+
+        <fieldset>
+          <legend>
+            <h5>Dados de Contato</h5>
+          </legend>
+          <form id="frmContato" action="contato.php" method="post">
+            <label> Nome</label><br />
+            <input
+              type="text"
+              required="required"
+              id="txtNome"
+              maxlength="100"
+              size="50"
+            /><br /><br />
+            <label>Sexo</label><br />
+            <input type="radio" name="rdsexo" value="M" required="required" />
+            <label> Masculino</label>
+            <input type="radio" name="rdsexo" value="F" required="required" />
+            <label> Feminino</label> <br /><br />
+            <label>Endereço</label><br />
+            <input
+              type="text"
+              required="required"
+              id="end"
+              maxlength="250"
+              size="50"
+            />
+            <br /><br />
+
+            <label>Estado:</label>
+            <select name="estado" id="slcEstado" required="required">
+              <option value="">Selecione</option>
+              <option value="">Bahia</option>
+              <option value="">São Paulo</option>
+              <option value="">Rio de Janeiro</option>
+              <option value="">Minas Gerais</option></select
+            ><br /><br />
+
+            <label>Cidade</label>
+            <select name="cidade" id="slcCidade">
+              <option value="">Selecione</option>
+              <option value="">Salvador</option>
+              <option value="">São Paulo</option>
+              <option value="">Rio de Janeiro</option>
+              <option value="">Belo Horizonte</option></select
+            ><br /><br />
+
+            <label>Telefone</label>
+            <input
+              type="text"
+              id="tel"
+              placeholder="(00)0000-0000"
+            /><br /><br />
+
+            <label>E-mail</label><br />
+            <input
+              type="email"
+              required="required"
+              size="50"
+              id="txtEmail"
+            /><br /><br />
+
+            <label>Áreas de Interesse</label><br />
+            <input type="checkbox" value="Javascript" name="chkareasdeint" />
+            <label>Javascript</label>
+            <input type="checkbox" value="html" name="chkareasdeint" />
+            <label>HTML</label>
+            <input type="checkbox" value="CSS" name="chkareasdeint" />
+            <label>CSS</label><br /><br />
+
+            <label>Mensagem</label><br />
+            <textarea name="mensagem" id="msg" cols="30" rows="10"></textarea
+            ><br /><br />
+
+            <input type="submit" value="Enviar" method="post" />
+          </form>
+        </fieldset>
+      </section>
+    </article>
+    </main>
+
+<!--fim do Main Content-->
+
+
+<!--Início do Footer-->
+    <footer>
+      <!--Redes Sociais-->
+      <ul>
+        <li>
+          <a href="#"></a>
+          <i class="fa-brands fa-square-instagram"></i>
+        </li>
+        <li>
+          <a href="#"></a>
+          <i class="fa-brands fa-square-twitter"></i>
+        </li>
+        <li>
+          <a href="#"></a>
+          <i class="fa-brands fa-facebook"></i>
+        </li>
+      </ul>
+      <!--Fim das Redes Sociais-->
+    </footer>
+    <!--fim do footer-->
+  </body>
+</html>
